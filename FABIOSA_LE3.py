@@ -13,5 +13,9 @@ while True:
     if has_letter and has_number:
         print("Password Accepted")
         break
+    elif not has_letter:
+        print("Password must contain at least one letter.")
+    elif not has_number:
+        print("Password must contain at least one number.")
     else:
         print("Password must contain at least one letter and one number. Please try again.")
