@@ -1,21 +1,9 @@
-while True:
-    password = input("Enter Password:")
+password = "Hulyu0707"
 
-    has_letter = False
-    has_number = False
+input_pass = input(("Enter Password:" ))
+      
+if input_pass == password:
+    print("Logged in")
 
-    for char in password:
-        if char.isalpha():
-            has_letter = True
-        elif char.isdigit():
-            has_number = True
-
-    if has_letter and has_number:
-        print("Password Accepted")
-        break
-    elif not has_letter:
-        print("Password must contain at least one letter.")
-    elif not has_number:
-        print("Password must contain at least one number.")
-    else:
-        print("Password must contain at least one letter and one number. Please try again.")
+else:
+    print("Access Denied.")
